@@ -46,6 +46,7 @@ class blackhole(object):
 def check(buffer):
     filename = buffer.name
     contents = '\n'.join(buffer[:])
+    contents += '\n'
 
     builtins = []
     try:
